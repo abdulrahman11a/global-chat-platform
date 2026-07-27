@@ -6,13 +6,15 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-10-512BD4?logo=dotnet&logoColor=white)
+![EF Core](https://img.shields.io/badge/EF%20Core-10-512BD4?logo=nuget&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?logo=rabbitmq&logoColor=white)
 ![OpenSearch](https://img.shields.io/badge/OpenSearch-005EB8?logo=opensearch&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon%20S3-569A31?logo=amazons3&logoColor=white)
 ![SignalR](https://img.shields.io/badge/Real--time-SignalR-blue)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
+![OpenTelemetry](https://img.shields.io/badge/Observability-OpenTelemetry-black?logo=opentelemetry&logoColor=white)
+![Architecture](https://img.shields.io/badge/Architecture-CQRS%20%7C%20Vertical%20Slice-informational)
 ![Status](https://img.shields.io/badge/Status-MVP%20in%20progress-yellow)
 
 *Real-time messaging, channels, files, and search — built with Vertical Slice Architecture and CQRS.*
