@@ -1,7 +1,6 @@
 <div align="center">
 
-# 💬 Global Chat Platform
-
+![Global Chat Platform](docs/assets/banner.svg)
 ### A production-grade, Slack-like real-time messaging backend
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
