@@ -1,0 +1,36 @@
+<Project>
+
+  <PropertyGroup>
+    <!-- Applies to every .csproj under this folder -->
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <!-- Code quality -->
+    <AnalysisLevel>latest</AnalysisLevel>
+    <AnalysisMode>Recommended</AnalysisMode>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+
+    <!-- Warnings -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+
+    <!-- Reproducible builds (useful for CI) -->
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+
+    <!-- Metadata (shows up in DLL properties / NuGet if you ever pack) -->
+    <Authors>Abdulrahman Fikry</Authors>
+    <Company>Sawa</Company>
+    <Product>Global Chat Platform</Product>
+  </PropertyGroup>
+
+  <!-- Test projects don't need to publish, and get a couple of extra packages -->
+  <PropertyGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+</Project>
