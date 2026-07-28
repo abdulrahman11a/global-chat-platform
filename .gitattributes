@@ -1,0 +1,35 @@
+# Auto detect text files and normalize line endings to LF on checkin
+* text=auto eol=lf
+
+# Explicit overrides for source files
+*.cs      text diff=csharp eol=lf
+*.csproj  text eol=lf
+*.sln     text eol=crlf
+*.props   text eol=lf
+*.targets text eol=lf
+*.json    text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.md      text eol=lf
+*.sh      text eol=lf
+*.editorconfig text eol=lf
+
+# Windows-specific scripts keep CRLF
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+*.ps1     text eol=crlf
+
+# Binary files — do not touch, do not diff
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.dll     binary
+*.exe     binary
+*.pfx     binary
+
+# Don't let generated/vendored folders affect repo language stats on GitHub
+docs/*    linguist-documentation
+*.props linguist-language=XML
+*.targets linguist-language=XML
