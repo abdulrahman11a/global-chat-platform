@@ -1,5 +1,7 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="GlobalChat.Domain/GlobalChat.Domain.csproj" Id="794585bc-d682-440f-a7be-c5cfaa5ae5b3" />
+    <Project Path="GlobalChat.Infrastructure/GlobalChat.Infrastructure.csproj" Id="2ba25b56-ef01-4dc8-894d-5a592b96ee6c" />
     <Project Path="src/GlobalChat.Api/GlobalChat.Api.csproj" />
   </Folder>
 </Solution>
