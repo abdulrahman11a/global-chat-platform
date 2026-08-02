@@ -8,10 +8,16 @@
 
   <ItemGroup>
     <Folder Include="Persistence\Configurations\" />
-    <Folder Include="Identity\" />
     <Folder Include="Messaging\" />
     <Folder Include="Storage\" />
-    <Folder Include="Persistence\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalChat.Domain\GlobalChat.Domain.csproj" />
   </ItemGroup>
 
 </Project>
