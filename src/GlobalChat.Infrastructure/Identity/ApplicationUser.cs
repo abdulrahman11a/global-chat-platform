@@ -1,5 +1,6 @@
 using GlobalChat.Domain.Entities;
 using GlobalChat.Domain.Enums;
+using GlobalChatPlatform.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 
 namespace GlobalChat.Infrastructure.Identity;
