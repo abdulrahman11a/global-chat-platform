@@ -9,11 +9,20 @@ public class RefreshTokenConfiguration : IEntityTypeConfiguration<RefreshToken>
     {
         builder.Property(r => r.Token).IsRequired().HasMaxLength(500);
 
-        builder.HasOne<ApplicationUser>()
-               .WithMany(u => u.RefreshTokens)
-               .HasForeignKey(r => r.UserId)
-               .OnDelete(DeleteBehavior.Cascade);
+
+
+        builder.HasOne(r => r.User)
+       .WithMany(u => u.RefreshTokens)
+       .HasForeignKey(r => r.UserId)
+       .OnDelete(DeleteBehavior.Cascade);
 
         builder.HasIndex(r => r.Token).IsUnique();
+
+       
+       // builder.HasOne<ApplicationUser>()
+       //.WithMany(u => u.RefreshTokens)
+       //.HasForeignKey(r => r.UserId)
+       //.OnDelete(DeleteBehavior.Cascade);
+
     }
 }
