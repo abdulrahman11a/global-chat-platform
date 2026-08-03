@@ -9,5 +9,4 @@ public class WorkspaceMember
 
     public Guid WorkspaceId { get; set; }
     public Workspace Workspace { get; set; } = null!;
-    public Guid SenderId { get; set; }
 }

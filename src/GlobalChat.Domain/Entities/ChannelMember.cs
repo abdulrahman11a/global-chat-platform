@@ -7,5 +7,4 @@ public class ChannelMember
 
     public Guid ChannelId { get; set; }
     public Channel Channel { get; set; } = null!;
-    public Guid SenderId { get; set; }
 }
